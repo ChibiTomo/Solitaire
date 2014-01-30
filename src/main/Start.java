@@ -64,10 +64,10 @@ public class Start {
 				new ConsoleSolitaire().start();
 				break;
 			case 2:
-				YT.println("Désolé, mais ce Solitaire est indisponible actuellement");
-				play();
-				// YT.println("Lancement du soli");
-				// new GUISolitaire().start();
+				// YT.println("Désolé, mais ce Solitaire est indisponible actuellement");
+				// play();
+				YT.println("Lancement du solitaire graphique...");
+				new GUISolitaire().start();
 				break;
 			default:
 				error();

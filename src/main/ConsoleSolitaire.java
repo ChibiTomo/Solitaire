@@ -1,7 +1,5 @@
 package main;
 
-import interfaces.ISolitaire;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -13,13 +11,12 @@ import solitaire.TablierAnglais;
 import solitaire.TriangleTablier;
 import yt.YT;
 
-public class ConsoleSolitaire implements ISolitaire {
+public class ConsoleSolitaire {
 
 	private TablierAnglais tablier;
 	private Dimension dim;
 	private BufferedReader br;
 
-	@Override
 	public void start() {
 		try {
 			br = new BufferedReader(new InputStreamReader(System.in));
